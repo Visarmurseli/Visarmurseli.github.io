@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!--=========================== UNICONS ===========================-->
+   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+  <!--=========================== CSS ===========================-->
+  <link rel="stylesheet" href="css/style.css">
+
+
+  <title>Portfolio</title>
+</head>
+<body>
+  <!--=========================== HEADER ===========================-->
+  <header class="header" id="header">
+    <nav class="nav container glass">
+      <a href="#" class="nav_logo">Visar</a>
+
+      <div class="nav_menu" id="nav-menu">
+        <ul class="nav_list grid">
+          <li class="nav_item">
+            <a href="#home" class="nav_link active-link">
+              <i class="uil uil-home nav_icon"></i>
+              Home
+            </a>
+          </li>
+          <li class="nav_item">
+            <a href="#qualification" class="nav_link">
+              <i class="uil uil-graduation-cap nav_icon"></i>
+              Qualification
+            </a>
+          </li>
+          <li class="nav_item">
+            <a href="#skills" class="nav_link">
+              <i class="uil uil-trophy nav_icon"></i>
+              Skills
+            </a>
+          </li>
+          <li class="nav_item">
+            <a href="#projects" class="nav_link">
+              <i class="uil uil-scenery nav_icon"></i>
+              Projects
+            </a>
+          </li>
+        </ul>
+        <i class="uil uil-times nav_close nav_icon" id="nav-close"></i>
+      </div>
+
+      <div class="nav_btns">
+        <i class="uil uil-sun change-theme" id="theme-button"></i>
+
+        <div class="nav_toggle" id="nav-toggle">
+          <i class="uil uil-apps"></i>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!--=========================== MAIN ===========================-->
+  <main class="main">
+    <!--=========================== HOME ===========================-->
+    <section class="home section" id="home">
+      <div class="home_container container grid">
+        <div class="home_content grid">
+          <div class="home_social">
+            <a href="https://www.linkedin.com/in/masar-murseli-846b37225/" target="_blank" class="home_social-icon">
+              <i class="uil uil-linkedin"></i>
+            </a>
+
+            <a href="https://github.com/Visarmurseli" target="_blank" class="home_social-icon">
+              <i class="uil uil-github"></i>
+            </a>
+          </div>
+
+          <div class="home_img">
+            <img src="img/portrait.png"  class="home_img-img"alt="">
+          </div>
+
+          <div class="home_data">
+            <h1 class="home_title">Hi, I'm
+              <h1 class="home_title-text_effect" data-text="Visar">Visar</h1>
+            </h1>
+            <h3 class="home_subtitle">Junior Consultant</h3>
+            <p class="home_description"> Software-Engineer</p>
+            <a download="" href="pdf/Lebenslauf_Visar_Murseli.pdf" class="button button--flex">
+              Download CV
+              <i class="uil uil-file-download button_icon"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="home_scroll">
+          <a href="#qualification" class="home_scroll-button button--flex">
+            <i class="uil uil-mouse-alt home_scroll-mouse"></i>
+            <span class="home_scroll-name">Scroll down</span>
+            <i class="uil uil-arrow-down home_scroll-arrow"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+          <!--=========================== QUALIFICATION ===========================-->
+
+          <section class="qualification section" id="qualification" >
+            <h2 class="section_title">Qualification</h2>
+            <span class="section_subtitle">My personal journey</span>
+
+            <div class="qualification_container container">
+              <div class="qualification_tabs">
+                <div class="qualification_button button--flex qualification_active" data-target="#education">
+                  <i class="uil uil-graduation-cap qualification_icon"></i>
+                  Education
+                </div>
+  
+                <div class="qualification_button button--flex" data-target="#work">
+                  <i class="uil uil-bag qualification_icon"></i>
+                  Work
+                </div>  
+              </div>            
+  
+                <div class="qualification_sections">
+                  <!--=========================== QUALIFICATION CONTENT 1 ===========================-->
+                  <div class="qualification_content qualification_active"  data-content id="education">
+                    <!--=========================== QUALIFICATION  1 ===========================-->
+                    <div class="qualification_data">
+                      <div>
+                       <h3 class="qualification_title">Business High School</h3>
+                       <span class="qualification_subtitle">Erich-Bracher-Schule Kornwestheim - Germany</span>
+                       <div class="qualification_calendar">
+                        <i class="uil uil-calendar-alt"></i>
+                        2017 - 2019
+                        </div>
+                     </div>
+  
+                     <div>
+                        <span class="qualification_rounder"></span>
+                        <span class="qualification_line"></span>
+                      </div>
+                    </div>
+  
+                       <!--=========================== QUALIFICATION  2 ===========================-->
+                       <div class="qualification_data">
+                        <div></div>
+                        
+                        <div>
+                          <span class="qualification_rounder"></span>
+                          <span class="qualification_line"></span>
+                        </div>
+                        
+                        <div>
+                          <h3 class="qualification_title">Bachelor Business Informatics</h3>
+                          <span class="qualification_subtitle">HfT Stuttgart - Germany</span>
+                          <div class="qualification_calendar">
+                           <i class="uil uil-calendar-alt"></i>
+                           10.2019 - 07.2023
+                           </div>
+                        </div>
+    
+                       
+                      </div>
+  
+                         
+                  </div>
+     <!--=========================== QUALIFICATION CONTENT 2 ===========================-->
+     <div class="qualification_content"  data-content id="work">
+      <!--=========================== QUALIFICATION  1 ===========================-->
+      <div class="qualification_data">
+        <div>
+         <h3 class="qualification_title">Controlling</h3>
+         <span class="qualification_subtitle">Mercedes-Benz AG - Germany</span>
+         <div class="qualification_calendar">
+          <i class="uil uil-calendar-alt"></i>
+          03.2022 - 08.2022
+          </div>
+       </div>
+  
+       <div>
+          <span class="qualification_rounder"></span>
+          <span class="qualification_line"></span>
+        </div>
+      </div>
+  
+         <!--=========================== QUALIFICATION  2 ===========================-->
+         <div class="qualification_data">
+          <div></div>
+          
+          <div>
+            <span class="qualification_rounder"></span>
+            <span class="qualification_line"></span>
+          </div>
+          
+          <div>
+           <h3 class="qualification_title">Bachelorarbeit </h3>
+           <h5 class="qualification_title">Evaluierung der Möglichkeiten und Grenzen einer Low-CodePlattform im Vertriebsumfeld
+          </h5>
+           <span class="qualification_subtitle">Wüstenrot & Württembergische AG - Germany</span>
+           <div class="qualification_calendar">
+            <i class="uil uil-calendar-alt"></i>
+            03.2023 - 06.2023
+            </div>
+         </div>
+  
+         
+        </div>
+  
+           <!--=========================== QUALIFICATION  3 ===========================-->
+      <div class="qualification_data">
+        <div>
+         <h3 class="qualification_title">Junior Consultant </h3>
+         <span class="qualification_subtitle">MHP Management- und IT-Beratung GmbH - Germany</span>
+         <div class="qualification_calendar">
+          <i class="uil uil-calendar-alt"></i>
+          10.2023 - to date
+          </div>
+       </div>
+  
+       <div>
+          <span class="qualification_rounder"></span>
+          
+        </div>
+      </div>
+  
+    </div>
+                  
+                </div>
+              
+            </div>          
+          </section>
+
+           <!--=========================== SKILLS ===========================-->
+
+           <section class="skills section container" id="skills">
+            <h2 class="section_title">Skills</h2>
+            <span class="section_subtitle">I have mastered the following tools</span>
+            <div class="skills_slider">
+              <div class="skills_slider-track">
+                <div class="skills_slide">
+                  <h3 class="skills_slide-title">JavaScript</h3>
+                  <img src="img/JavaScript.png" alt="" class="slide_img">
+                </div>
+                <div class="skills_slide">
+                  <h3 class="skills_slide-title">HTML</h3>
+                  <img src="img/HTML.png" alt="" class="slide_img">
+                </div>
+                <div class="skills_slide">
+                  <h3 class="skills_slide-title">CSS</h3>
+                  <img src="img/CSS.png" alt="" class="slide_img">
+                </div>
+                <div class="skills_slide">
+                  <h3 class="skills_slide-title">Java</h3>
+                  <img src="img/Java.png" alt="" class="slide_img">
+                </div>
+                <div class="skills_slide">
+                  <h3 class="skills_slide-title">SQL</h3>
+                  <img src="img/SQL.png" alt="" class="slide_img"> 
+                </div>
+                <div class="skills_slide">
+                  <h3 class="skills_slide-title">Database</h3>
+                  <img src="img/Database.png" alt="" class="slide_img">
+                </div>
+                <div class="skills_slide">
+                  <h3 class="skills_slide-title">Github</h3>
+                  <img src="img/Github.png" alt="" class="slide_img">
+                </div>
+                <div class="skills_slide">
+                  <h3 class="skills_slide-title">SAP</h3>
+                  <img src="img/SAP.png" alt="" class="slide_img">
+                </div>
+                <div class="skills_slide">
+                  <h3 class="skills_slide-title">Excel</h3>
+                  <img src="img/Excel.png" alt="" class="slide_img">
+                </div>
+                <div class="skills_slide">
+                  <h3 class="skills_slide-title">Powerpoint</h3>
+                  <img src="img/Powerpoint.png" alt="" class="slide_img">
+                </div>
+                <div class="skills_slide">
+                  <h3 class="skills_slide-title">Word</h3>
+                  <img src="img/Word.png" alt="" class="slide_img">
+                </div>
+
+
+                <div class="skills_slide">
+                  <h3 class="skills_slide-title">JavaScript</h3>
+                  <img src="img/JavaScript.png" alt="" class="slide_img">
+                </div>
+                <div class="skills_slide">
+                  <h3 class="skills_slide-title">HTML</h3>
+                  <img src="img/HTML.png" alt="" class="slide_img">
+                </div>
+                <div class="skills_slide">
+                  <h3 class="skills_slide-title">CSS</h3>
+                  <img src="img/CSS.png" alt="" class="slide_img">
+                </div>
+                <div class="skills_slide">
+                  <h3 class="skills_slide-title">Java</h3>
+                  <img src="img/Java.png" alt="" class="slide_img">
+                </div>
+                <div class="skills_slide">
+                  <h3 class="skills_slide-title">SQL</h3>
+                  <img src="img/SQL.png" alt="" class="slide_img"> 
+                </div>
+                <div class="skills_slide">
+                  <h3 class="skills_slide-title">Database</h3>
+                  <img src="img/Database.png" alt="" class="slide_img">
+                </div>
+                <div class="skills_slide">
+                  <h3 class="skills_slide-title">Github</h3>
+                  <img src="img/Github.png" alt="" class="slide_img">
+                </div>
+                <div class="skills_slide">
+                  <h3 class="skills_slide-title">SAP</h3>
+                  <img src="img/SAP.png" alt="" class="slide_img">
+                </div>
+                <div class="skills_slide">
+                  <h3 class="skills_slide-title">Excel</h3>
+                  <img src="img/Excel.png" alt="" class="slide_img">
+                </div>
+                <div class="skills_slide">
+                  <h3 class="skills_slide-title">Powerpoint</h3>
+                  <img src="img/Powerpoint.png" alt="" class="slide_img">
+                </div>
+                <div class="skills_slide">
+                  <h3 class="skills_slide-title">Word</h3>
+                  <img src="img/Word.png" alt="" class="slide_img">
+                </div>
+              </div>
+            </div>
+
+           </section>
+<!--=========================== Portfolio ===========================
+<section class="portfolio section" id="portfolio">
+  <h2 class="section_title">Portfolio</h2>
+    <span class="section_subtitle">My selfmade work</span>
+    <p class="portfolio_text">asdfikjl aodgihp asdoigh apg ioasdoüipghadg ioasdoüipghadg
+      asdjphg üaos iuhg erbgausidhgbjvu9hfg aegfi bsdgpuiadguh
+    </p>
+    <div class="portfolios container ">
+      <div class="portfolio_item">
+        <div class="portfolio_img">
+          <img src="img/Stockholm.jpg" alt="" class="portfolio_img-img">
+        </div>
+        <div class="portfolio_hover-item">
+          <h3>project source</h3>
+          <div class="portfolio_icons">
+            <a href="#" target="_blank" class="portfolio_icon">
+              <i class="uil uil-arrow-right portfolio_icon-icon"></i>
+            </a>
+            <a href="#" target="_blank" class="portfolio_icon">
+              <i class="uil uil-arrow-left portfolio_icon-icon"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="portfolio_item">
+        <div class="portfolio_img">
+          <img src="img/Stockholm.jpg" alt="" class="portfolio_img-img">
+        </div>
+        <div class="portfolio_hover-item">
+          <h3>project source</h3>
+          <div class="portfolio_icons">
+            <a href="#" target="_blank" class="portfolio_icon">
+              <i class="uil uil-arrow-right portfolio_icon-icon"></i>
+            </a>
+            <a href="#" target="_blank" class="portfolio_icon">
+              <i class="uil uil-arrow-left portfolio_icon-icon"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="portfolio_item">
+        <div class="portfolio_img">
+          <img src="img/Stockholm.jpg" alt="" class="portfolio_img-img">
+        </div>
+        <div class="portfolio_hover-item">
+          <h3>project source</h3>
+          <div class="portfolio_icons">
+            <a href="#" target="_blank" class="portfolio_icon">
+              <i class="uil uil-arrow-right portfolio_icon-icon"></i>
+            </a>
+            <a href="#" target="_blank" class="portfolio_icon">
+              <i class="uil uil-arrow-left portfolio_icon-icon"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="portfolio_item">
+        <div class="portfolio_img">
+          <img src="img/Stockholm.jpg" alt="" class="portfolio_img-img">
+        </div>
+        <div class="portfolio_hover-item">
+          <h3>project source</h3>
+          <div class="portfolio_icons">
+            <a href="#" target="_blank" class="portfolio_icon">
+              <i class="uil uil-arrow-right portfolio_icon-icon"></i>
+            </a>
+            <a href="#" target="_blank" class="portfolio_icon">
+              <i class="uil uil-arrow-left portfolio_icon-icon"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="portfolio_item">
+        <div class="portfolio_img">
+          <img src="img/Stockholm.jpg" alt="" class="portfolio_img-img">
+        </div>
+        <div class="portfolio_hover-item">
+          <h3>project source</h3>
+          <div class="portfolio_icons">
+            <a href="#" target="_blank" class="portfolio_icon">
+              <i class="uil uil-arrow-right portfolio_icon-icon"></i>
+            </a>
+            <a href="#" target="_blank" class="portfolio_icon">
+              <i class="uil uil-arrow-left portfolio_icon-icon"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="portfolio_item">
+        <div class="portfolio_img">
+          <img src="img/Stockholm.jpg" alt="" class="portfolio_img-img">
+        </div>
+        <div class="portfolio_hover-item">
+          <h3>project source</h3>
+          <div class="portfolio_icons">
+            <a href="#" target="_blank" class="portfolio_icon">
+              <i class="uil uil-arrow-right portfolio_icon-icon"></i>
+            </a>
+            <a href="#" target="_blank" class="portfolio_icon">
+              <i class="uil uil-arrow-left portfolio_icon-icon"></i>
+            </a>
+          </div>
+        </div>
+      </divs>
+    </div>
+</section>
+          
+-->
+
+           <!--=========================== PROJECTS ===========================-->
+
+           
+  <!-- <section class="projects section container" id="projects">
+    <h2 class="section_title">Projects</h2>
+    <span class="section_subtitle">My selfmade projects</span>
+    <div class="projects_container ">
+      <div class="project_card-box">
+        <span></span>
+        <div class="content">
+          <h2>Modern Website</h2>
+          <p>This modern responsive website is designed to adjust its layout and content according to the screen size and device type.
+             This ensures a consistent user experience across different devices.</p>
+             <a  href="https://github.com/andilosing/andilosing.github.io" target="_blank"class="projects_button button--flex">
+              See code
+              <i class="uil uil-arrow-right button_icon"></i>
+            </a>
+        </div>
+      </div>
+      <div class="project_card-box">
+        <span></span>
+        <div class="content">
+          <h2>Functional Website</h2>
+          <p>This website is focused on providing excellent functionality and top-notch security, rather than fancy CSS design elements. 
+          </p>
+          <a  href="https://github.com/andilosing/TopSights" target="_blank"class="projects_button button--flex">
+            See code
+            <i class="uil uil-arrow-right button_icon"></i>
+          </a>
+        </div>
+      </div>
+      <div class="project_card-box">
+        <span></span>
+        <div class="content">
+          <h2>Bachelor Thesis</h2>
+          <p> As part of a programming course, we coded a program that simplifies the process of completing a bachelor thesis.
+            The program automates tasks and reduce the workload for students and allowing them to focus on the content of their thesis.
+          </p>
+          <a  href="https://github.com/andilosing/SmartThesis" target="_blank"class="projects_button button--flex">
+            See code
+            <i class="uil uil-arrow-right button_icon"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+
+
+  <!--=========================== Test Projects ===========================-->
+    <section class="service section container" id="projects"> 
+      <h2 class="section_title">Projects</h2>
+      <span class="section_subtitle">My selfmade projects</span>
+
+
+<!--
+      <div class="box">
+        <div class="card">
+          <i class="uil uil-user"></i>
+        <h5>Portfolio Website</h5>
+        <div class="pra">
+          <p>
+            Website to showcase skills using technologies such as JS, HTML, and CSS, with a focus on CSS.
+          </p>
+
+          <p> 
+            <a class="button" href="https://github.com/andilosing/andilosing.github.io" target="_blank">See code</a>
+          </p>
+        </div>
+        </div>
+
+        <div class="card">
+          <i class="uil uil-credit-card"></i>
+          <h5> Flashcard App</h5>
+          <div class="pra">
+            <p>A full-stack flashcard app designed for creating and studying flashcards. 
+              It utilizes React for the frontend and Express with an SQLite database for the backend.
+            </p>
+              
+            <p> 
+              <a class="button" href="https://github.com/andilosing/flashcard_app" target="_blank"> See code</a>
+            </p>
+          </div>
+          </div>
+
+          <div class="card">
+            <i class="uil uil-location-pin-alt"></i>
+            <h5>Favorite Sights</h5>
+            <div class="pra">
+              <p>Project from a university course: creation and management of a favorite sights site,
+                 with login, session features, and a comment function. Focus on functionality, not appearance.
+              </p>
+    
+              <p> 
+                <a class="button" href="https://github.com/andilosing/TopSights" target="_blank"> See code</a>
+              </p>
+            </div>
+            </div>
+
+            <div class="card">
+              <i class="uil uil-process"></i>
+              <h5>Bachelor Thesis Process</h5>
+              <div class="pra">
+                <p>
+                  University project in Java, aimed at optimizing the Bachelor's thesis process.
+                </p>
+      
+                <p> 
+                  <a class="button" href="https://github.com/andilosing/SmartThesis" target="_blank"> See code</a>
+                </p>
+              </div>
+              </div>
+-->
+
+      </div>
+
+    </section>
+
+  </main>
+
+  
+  <!--=========================== Footer ===========================-->
+  <footer class="footer">
+    <div class="footer_bg">
+      <div class="footer_container container grid">
+        <div>
+          <h1 class="footer_title">Visar</h1>
+          <span class="footer_subtitle">
+            Junior Consultant
+          </span>
+        </div>
+
+        <ul class="footer_links">
+          <li>
+            <a href="#home" class="footer_link">About</a>
+          </li>
+          <li>
+            <a href="#qualification" class="footer_link">Qualification</a>
+          </li>
+          <li>
+            <a href="#skills" class="footer_link">Skills</a>
+          </li>
+          <li>
+            <a href="#projects" class="footer_link">Projects</a>
+          </li>         
+        </ul>
+
+        <div class="footer_socials">
+          <a href="https://www.linkedin.com/in/masar-murseli-846b37225/" target="_blank" class="footer_social">
+            <i class="uil uil-linkedin"></i>
+          </a>
+
+          <a href="https://github.com/Visarmurseli" target="_blank" class="footer_social">
+            <i class="uil uil-github"></i>
+          </a>
+        </div>
+      </div>
+      <p class="footer_copy">&#169; Visar Murseli. All rights reserved.</p>
+    </div>
+  </footer>
+
+ <!--=========================== SCROLL TOP ===========================-->
+  <a href="#home" class="scrollup" id="scroll-up">
+    <i class="uil uil-arrow-up scrollup_icon"></i>
+  </a>
+
+  <!--=========================== MAIN JS ===========================-->
+  <script src="js/main.js"></script>
+
+</body>
+</html>
