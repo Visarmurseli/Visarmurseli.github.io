@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <!--=========================== UNICONS ===========================-->
-   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+  <!--=========================== UNICONS ===========================-->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
   <!--=========================== CSS ===========================-->
   <link rel="stylesheet" href="css/style.css">
@@ -13,6 +14,7 @@
 
   <title>Portfolio</title>
 </head>
+
 <body>
   <!--=========================== HEADER ===========================-->
   <header class="header" id="header">
@@ -39,12 +41,12 @@
               Skills
             </a>
           </li>
-          <li class="nav_item">
+          <!--li class="nav_item">
             <a href="#projects" class="nav_link">
               <i class="uil uil-scenery nav_icon"></i>
               Projects
             </a>
-          </li>
+          </li-->
         </ul>
         <i class="uil uil-times nav_close nav_icon" id="nav-close"></i>
       </div>
@@ -76,7 +78,7 @@
           </div>
 
           <div class="home_img">
-            <img src="img/portrait.png"  class="home_img-img"alt="">
+            <img src="img/portrait.png" class="home_img-img" alt="">
           </div>
 
           <div class="home_data">
@@ -84,7 +86,7 @@
               <h1 class="home_title-text_effect" data-text="Visar">Visar</h1>
             </h1>
             <h3 class="home_subtitle">Working Student</h3>
-            <p class="home_description"> Datacenter One</p>
+            <p class="home_description"> Stuttgarter Straßenbahnen AG</p>
             <a download="" href="pdf/Lebenslauf_Visar_Murseli.pdf" class="button button--flex">
               Download CV
               <i class="uil uil-file-download button_icon"></i>
@@ -102,125 +104,141 @@
       </div>
     </section>
 
-          <!--=========================== QUALIFICATION ===========================-->
+    <!--=========================== QUALIFICATION ===========================-->
 
-          <section class="qualification section" id="qualification" >
-            <h2 class="section_title">Qualification</h2>
-            <span class="section_subtitle">My personal journey</span>
+    <section class="qualification section" id="qualification">
+      <h2 class="section_title">Qualification</h2>
+      <span class="section_subtitle">My personal journey</span>
 
-            <div class="qualification_container container">
-              <div class="qualification_tabs">
-                <div class="qualification_button button--flex qualification_active" data-target="#education">
-                  <i class="uil uil-graduation-cap qualification_icon"></i>
-                  Education
+      <div class="qualification_container container">
+        <div class="qualification_tabs">
+          <div class="qualification_button button--flex qualification_active" data-target="#education">
+            <i class="uil uil-graduation-cap qualification_icon"></i>
+            Education
+          </div>
+
+          <div class="qualification_button button--flex" data-target="#work">
+            <i class="uil uil-bag qualification_icon"></i>
+            Work
+          </div>
+        </div>
+
+        <div class="qualification_sections">
+          <!--=========================== QUALIFICATION CONTENT 1 ===========================-->
+          <div class="qualification_content qualification_active" data-content id="education">
+            <!--=========================== QUALIFICATION  1 ===========================-->
+            <div class="qualification_data">
+              <div>
+                <h3 class="qualification_title"> Master Information Systems</h3>
+                <span class="qualification_subtitle">University of Stuttgart - Germany</span>
+                <div class="qualification_calendar">
+                  <i class="uil uil-calendar-alt"></i>
+                  10/2023 - up to date
                 </div>
-  
-                <div class="qualification_button button--flex" data-target="#work">
-                  <i class="uil uil-bag qualification_icon"></i>
-                  Work
-                </div>  
-              </div>            
-  
-                <div class="qualification_sections">
-                  <!--=========================== QUALIFICATION CONTENT 1 ===========================-->
-                  <div class="qualification_content qualification_active"  data-content id="education">
-                    <!--=========================== QUALIFICATION  1 ===========================-->
-                    <div class="qualification_data">
-                      <div>
-                       <h3 class="qualification_title"> High School</h3>
-                       <span class="qualification_subtitle">Oscar Paret Schule - Germany</span>
-                       <div class="qualification_calendar">
-                        <i class="uil uil-calendar-alt"></i>
-                        2009 - 2017
-                        </div>
-                     </div>
-  
-                     <div>
-                        <span class="qualification_rounder"></span>
-                        <span class="qualification_line"></span>
-                      </div>
-                    </div>
-  
-                       <!--=========================== QUALIFICATION  2 ===========================-->
-                       <div class="qualification_data">
-                        <div></div>
-                        
-                        <div>
-                          <span class="qualification_rounder"></span>
-                          <span class="qualification_line"></span>
-                        </div>
-                        
-                        <div>
-                          <h3 class="qualification_title">Bachelor Information Systems</h3>
-                          <span class="qualification_subtitle">University of Stuttgart - Germany</span>
-                          <div class="qualification_calendar">
-                           <i class="uil uil-calendar-alt"></i>
-                           10.2017 - 09.2023
-                           </div>
-                        </div>
-    
-                      </div>
-                         <!--=========================== QUALIFICATION  2 ===========================-->
-                         <div class="qualification_data">
-                          <div>
-                            <h3 class="qualification_title">Master Information Systems</h3>
-                            <span class="qualification_subtitle">University of Stuttgart - Germany</span>
-                            <div class="qualification_calendar">
-                             <i class="uil uil-calendar-alt"></i>
-                             10.2023 - 
-                             </div>
-                          </div>
-                             
-                          <div>
-                            <span class="qualification_rounder"></span>
-                            <span class="qualification_line"></span>
-                          </div>
-                        </div>
-                         
-                  </div>
-     <!--=========================== QUALIFICATION CONTENT 2 ===========================-->
-     <div class="qualification_content"  data-content id="work">
-      <!--=========================== QUALIFICATION  1 ===========================-->
-      <div class="qualification_data">
-        <div>
-         <h3 class="qualification_title">Bachelorarbeit</h3>
-         <h5 class="qualification_subtitle">Beyond the Code: Wie Boundary Resources den Erfolg von Low-Code Plattformen beeinflussen und welche Rolle sie bei der digitalen Transformation spielen</h5>
-         <span class="qualification_subtitle">University of Stuttgart - Germany</span>
-         <div class="qualification_calendar">
-          <i class="uil uil-calendar-alt"></i>
-          03.2023 - 09.2023
-          </div>
-       </div>
-  
-       <div>
-          <span class="qualification_rounder"></span>
-          <span class="qualification_line"></span>
-        </div>
-      </div>
-  
-         <!--=========================== QUALIFICATION  2 ===========================-->
-         <div class="qualification_data">
-          <div></div>
-          
-          <div>
-            <span class="qualification_rounder"></span>
-            <span class="qualification_line"></span>
-          </div>
-          
-          <div>
-           <h3 class="qualification_title">Working Student </h3>
-           <h5 class="qualification_subtitle">Infrastructure Network Operation Center</h5>
-           <span class="qualification_subtitle">Datacenter One - Germany</span>
-           <div class="qualification_calendar">
-            <i class="uil uil-calendar-alt"></i>
-            05.2023 - to date
+              </div>
+
+              <div>
+                <span class="qualification_rounder"></span>
+                <span class="qualification_line"></span>
+              </div>
             </div>
-         </div>
-  
-         
-        </div>
-  
-           <!--=========================== QUALIFICATION  3 ===========================-
+
+            <!--=========================== QUALIFICATION  2 ===========================-->
+            <div class="qualification_data">
+              <div></div>
+
+              <div>
+                <span class="qualification_rounder"></span>
+                <span class="qualification_line"></span>
+              </div>
+
+              <div>
+                <h3 class="qualification_title">Bachelor Information Systems</h3>
+                <span class="qualification_subtitle">University of Stuttgart - Germany</span>
+                <div class="qualification_calendar">
+                  <i class="uil uil-calendar-alt"></i>
+                  10/2017 - 09/2023
+                </div>
+              </div>
+
+            </div>
+            <!--=========================== QUALIFICATION  3 ===========================-->
+            <div class="qualification_data">
+              <div>
+                <h3 class="qualification_title">High School</h3>
+                <span class="qualification_subtitle">Oscar Paret Schule - Germany</span>
+                <div class="qualification_calendar">
+                  <i class="uil uil-calendar-alt"></i>
+                  2009 - 2017
+                </div>
+              </div>
+
+              <div>
+                <span class="qualification_rounder"></span>
+                <span class="qualification_line"></span>
+              </div>
+            </div>
+
+          </div>
+          <!--=========================== QUALIFICATION CONTENT 2 ===========================-->
+          <div class="qualification_content" data-content id="work">
+            <!--=========================== QUALIFICATION  1 ===========================-->
+            <div class="qualification_data">
+              <div>
+                <h3 class="qualification_title">Working Student</h3>
+                <h5 class="qualification_subtitle">SAP S4/HANA Conversion</h5>
+                <span class="qualification_subtitle">Stuttgarter Straßenbahnen AG - Germany</span>
+                <div class="qualification_calendar">
+                  <i class="uil uil-calendar-alt"></i>
+                  05/2024 - up to date
+                </div>
+              </div>
+              <div>
+                <span class="qualification_rounder"></span>
+                <span class="qualification_line"></span>
+              </div>
+            </div>
+            <!--=========================== QUALIFICATION  1 ===========================-->
+            <div class="qualification_data">
+              <div></div>
+
+              <div>
+                <span class="qualification_rounder"></span>
+                <span class="qualification_line"></span>
+              </div>
+              <div>
+                <h3 class="qualification_title">Working Student</h3>
+                <h5 class="qualification_subtitle">Infrastructure Network Operation Center</h5>
+                <span class="qualification_subtitle">Datacenter One GmbH - Germany</span>
+                <div class="qualification_calendar">
+                  <i class="uil uil-calendar-alt"></i>
+                  05/2023 - 04/2024
+                </div>
+              </div>
+            </div>
+
+            <!--=========================== QUALIFICATION  2 ===========================-->
+            <div class="qualification_data">
+
+              <div>
+                <h3 class="qualification_title">Bachelor Thesis</h3>
+                <h5 class="qualification_subtitle">Beyond the code: How boundary resources influence the success of
+                  low-code platforms and their role in digital transformation.</h5>
+                <span class="qualification_subtitle">University of Stuttgart - Germany</span>
+                <div class="qualification_calendar">
+                  <i class="uil uil-calendar-alt"></i>
+                  03/2023 - 09/2023
+                </div>
+              </div>
+              <div>
+                <span class="qualification_rounder"></span>
+                <span class="qualification_line"></span>
+              </div>
+
+
+            </div>
+
+            <!--=========================== QUALIFICATION  3 ===========================-
       <div class="qualification_data">
         <div>
          <h3 class="qualification_title">Working Studentt </h3>
@@ -239,146 +257,122 @@
   
     </div>
   -->
-                  
-                </div>
-              
-            </div>          
-          </section>
 
-           <!--=========================== SKILLS ===========================-->
+          </div>
 
-           <section class="skills section container" id="skills">
-            <h2 class="section_title">Skills</h2>
-            <span class="section_subtitle">I have mastered the following tools</span>
-            <div class="skills_slider">
-              <div class="skills_slider-track">
-                <div class="skills_slide">
-                  <h3 class="skills_slide-title">JavaScript</h3>
-                  <img src="img/JavaScript.png" alt="" class="slide_img">
-                </div>
-                <div class="skills_slide">
-                  <h3 class="skills_slide-title">HTML</h3>
-                  <img src="img/HTML.png" alt="" class="slide_img">
-                </div>
-                <div class="skills_slide">
-                  <h3 class="skills_slide-title">CSS</h3>
-                  <img src="img/CSS.png" alt="" class="slide_img">
-                </div>
-                <div class="skills_slide">
-                  <h3 class="skills_slide-title">Java</h3>
-                  <img src="img/Java.png" alt="" class="slide_img">
-                </div>
-                <div class="skills_slide">
-                  <h3 class="skills_slide-title">SQL</h3>
-                  <img src="img/SQL.png" alt="" class="slide_img"> 
-                </div>
-                <div class="skills_slide">
-                  <h3 class="skills_slide-title">Database</h3>
-                  <img src="img/Database.png" alt="" class="slide_img">
-                </div>
-                <div class="skills_slide">
-                  <h3 class="skills_slide-title">Github</h3>
-                  <img src="img/Github.png" alt="" class="slide_img">
-                </div>
-                <div class="skills_slide">
-                  <h3 class="skills_slide-title">SAP</h3>
-                  <img src="img/SAP.png" alt="" class="slide_img">
-                </div>
-                <div class="skills_slide">
-                  <h3 class="skills_slide-title">Excel</h3>
-                  <img src="img/Excel.png" alt="" class="slide_img">
-                </div>
-                <div class="skills_slide">
-                  <h3 class="skills_slide-title">Powerpoint</h3>
-                  <img src="img/Powerpoint.png" alt="" class="slide_img">
-                </div>
-                <div class="skills_slide">
-                  <h3 class="skills_slide-title">Word</h3>
-                  <img src="img/Word.png" alt="" class="slide_img">
-                </div>
-                <div class="skills_slide">
-                  <h3 class="skills_slide-title">MS Project</h3>
-                  <img src="img/Project.png" alt="" class="slide_img">
-                </div>
-                <div class="skills_slide">
-                  <h3 class="skills_slide-title">Jira</h3>
-                  <img src="img/Jira.png" alt="" class="slide_img">
-                </div>
-                <div class="skills_slide">
-                  <h3 class="skills_slide-title">Confluence</h3>
-                  <img src="img/Confluence.png" alt="" class="slide_img">
-                </div>
-                <div class="skills_slide">
-                  <h3 class="skills_slide-title">Mindmanager</h3>
-                  <img src="img/Mindmanager.png" alt="" class="slide_img">
-                </div>
+        </div>
+    </section>
+
+    <!--=========================== SKILLS ===========================-->
+
+    <section class="skills section container" id="skills">
+      <h2 class="section_title">Skills</h2>
+      <span class="section_subtitle">I have mastered the following tools</span>
+      <div class="skills_slider">
+        <div class="skills_slider-track">
+          <div class="skills_slide">
+            <h3 class="skills_slide-title">JavaScript</h3>
+            <img src="img/JavaScript.png" alt="" class="slide_img">
+          </div>
+          <div class="skills_slide">
+            <h3 class="skills_slide-title">HTML</h3>
+            <img src="img/HTML.png" alt="" class="slide_img">
+          </div>
+          <div class="skills_slide">
+            <h3 class="skills_slide-title">CSS</h3>
+            <img src="img/CSS.png" alt="" class="slide_img">
+          </div>
+          <div class="skills_slide">
+            <h3 class="skills_slide-title">Java</h3>
+            <img src="img/Java.png" alt="" class="slide_img">
+          </div>
+          <div class="skills_slide">
+            <h3 class="skills_slide-title">SQL</h3>
+            <img src="img/SQL.png" alt="" class="slide_img">
+          </div>
+          <div class="skills_slide">
+            <h3 class="skills_slide-title">Database</h3>
+            <img src="img/Database.png" alt="" class="slide_img">
+          </div>
+          <div class="skills_slide">
+            <h3 class="skills_slide-title">Github</h3>
+            <img src="img/Github.png" alt="" class="slide_img">
+          </div>
+          <div class="skills_slide">
+            <h3 class="skills_slide-title">SAP</h3>
+            <img src="img/SAP.png" alt="" class="slide_img">
+          </div>
+          <div class="skills_slide">
+            <h3 class="skills_slide-title">MS Project</h3>
+            <img src="img/Project.png" alt="" class="slide_img">
+          </div>
+          <div class="skills_slide">
+            <h3 class="skills_slide-title">Jira</h3>
+            <img src="img/Jira.png" alt="" class="slide_img">
+          </div>
+          <div class="skills_slide">
+            <h3 class="skills_slide-title">Confluence</h3>
+            <img src="img/Confluence.png" alt="" class="slide_img">
+          </div>
+          <div class="skills_slide">
+            <h3 class="skills_slide-title">Mindmanager</h3>
+            <img src="img/Mindmanager.png" alt="" class="slide_img">
+          </div>
 
 
-                <div class="skills_slide">
-                  <h3 class="skills_slide-title">JavaScript</h3>
-                  <img src="img/JavaScript.png" alt="" class="slide_img">
-                </div>
-                <div class="skills_slide">
-                  <h3 class="skills_slide-title">HTML</h3>
-                  <img src="img/HTML.png" alt="" class="slide_img">
-                </div>
-                <div class="skills_slide">
-                  <h3 class="skills_slide-title">CSS</h3>
-                  <img src="img/CSS.png" alt="" class="slide_img">
-                </div>
-                <div class="skills_slide">
-                  <h3 class="skills_slide-title">Java</h3>
-                  <img src="img/Java.png" alt="" class="slide_img">
-                </div>
-                <div class="skills_slide">
-                  <h3 class="skills_slide-title">SQL</h3>
-                  <img src="img/SQL.png" alt="" class="slide_img"> 
-                </div>
-                <div class="skills_slide">
-                  <h3 class="skills_slide-title">Database</h3>
-                  <img src="img/Database.png" alt="" class="slide_img">
-                </div>
-                <div class="skills_slide">
-                  <h3 class="skills_slide-title">Github</h3>
-                  <img src="img/Github.png" alt="" class="slide_img">
-                </div>
-                <div class="skills_slide">
-                  <h3 class="skills_slide-title">SAP</h3>
-                  <img src="img/SAP.png" alt="" class="slide_img">
-                </div>
-                <div class="skills_slide">
-                  <h3 class="skills_slide-title">Excel</h3>
-                  <img src="img/Excel.png" alt="" class="slide_img">
-                </div>
-                <div class="skills_slide">
-                  <h3 class="skills_slide-title">Powerpoint</h3>
-                  <img src="img/Powerpoint.png" alt="" class="slide_img">
-                </div>
-                <div class="skills_slide">
-                  <h3 class="skills_slide-title">Word</h3>
-                  <img src="img/Word.png" alt="" class="slide_img">
-                </div>
-                <div class="skills_slide">
-                  <h3 class="skills_slide-title">MS Project</h3>
-                  <img src="img/Project.png" alt="" class="slide_img">
-                </div>
-                <div class="skills_slide">
-                  <h3 class="skills_slide-title">Jira</h3>
-                  <img src="img/Jira.png" alt="" class="slide_img">
-                </div>
-                <div class="skills_slide">
-                  <h3 class="skills_slide-title">Confluence</h3>
-                  <img src="img/Confluence.png" alt="" class="slide_img">
-                </div>
-                <div class="skills_slide">
-                  <h3 class="skills_slide-title">Mindmanager</h3>
-                  <img src="img/Mindmanager.png" alt="" class="slide_img">
-                </div>
-              </div>
-            </div>
+          <div class="skills_slide">
+            <h3 class="skills_slide-title">JavaScript</h3>
+            <img src="img/JavaScript.png" alt="" class="slide_img">
+          </div>
+          <div class="skills_slide">
+            <h3 class="skills_slide-title">HTML</h3>
+            <img src="img/HTML.png" alt="" class="slide_img">
+          </div>
+          <div class="skills_slide">
+            <h3 class="skills_slide-title">CSS</h3>
+            <img src="img/CSS.png" alt="" class="slide_img">
+          </div>
+          <div class="skills_slide">
+            <h3 class="skills_slide-title">Java</h3>
+            <img src="img/Java.png" alt="" class="slide_img">
+          </div>
+          <div class="skills_slide">
+            <h3 class="skills_slide-title">SQL</h3>
+            <img src="img/SQL.png" alt="" class="slide_img">
+          </div>
+          <div class="skills_slide">
+            <h3 class="skills_slide-title">Database</h3>
+            <img src="img/Database.png" alt="" class="slide_img">
+          </div>
+          <div class="skills_slide">
+            <h3 class="skills_slide-title">Github</h3>
+            <img src="img/Github.png" alt="" class="slide_img">
+          </div>
+          <div class="skills_slide">
+            <h3 class="skills_slide-title">SAP</h3>
+            <img src="img/SAP.png" alt="" class="slide_img">
+          </div>
+          <div class="skills_slide">
+            <h3 class="skills_slide-title">MS Project</h3>
+            <img src="img/Project.png" alt="" class="slide_img">
+          </div>
+          <div class="skills_slide">
+            <h3 class="skills_slide-title">Jira</h3>
+            <img src="img/Jira.png" alt="" class="slide_img">
+          </div>
+          <div class="skills_slide">
+            <h3 class="skills_slide-title">Confluence</h3>
+            <img src="img/Confluence.png" alt="" class="slide_img">
+          </div>
+          <div class="skills_slide">
+            <h3 class="skills_slide-title">Mindmanager</h3>
+            <img src="img/Mindmanager.png" alt="" class="slide_img">
+          </div>
+        </div>
+      </div>
 
-           </section>
-<!--=========================== Portfolio ===========================
+    </section>
+    <!--=========================== Portfolio ===========================
 <section class="portfolio section" id="portfolio">
   <h2 class="section_title">Portfolio</h2>
     <span class="section_subtitle">My selfmade work</span>
@@ -492,10 +486,10 @@
           
 -->
 
-           <!--=========================== PROJECTS ===========================-->
+    <!--=========================== PROJECTS ===========================-->
 
-           
-  <!-- <section class="projects section container" id="projects">
+
+    <!-- <section class="projects section container" id="projects">
     <h2 class="section_title">Projects</h2>
     <span class="section_subtitle">My selfmade projects</span>
     <div class="projects_container ">
@@ -541,13 +535,14 @@
 
 
 
-  <!--=========================== Test Projects ===========================-->
-    <section class="service section container" id="projects"> 
+    <!--=========================== Test Projects ===========================-->
+    <!--
+  <section class="service section container" id="projects"> 
       <h2 class="section_title">Projects</h2>
       <span class="section_subtitle">My selfmade projects</span>
+-->
 
-
-<!--
+    <!--
       <div class="box">
         <div class="card">
           <i class="uil uil-user"></i>
@@ -606,13 +601,13 @@
               </div>
 -->
 
-      </div>
+    </div>
 
     </section>
 
   </main>
 
-  
+
   <!--=========================== Footer ===========================-->
   <footer class="footer">
     <div class="footer_bg">
@@ -634,9 +629,9 @@
           <li>
             <a href="#skills" class="footer_link">Skills</a>
           </li>
-          <li>
+          <!--li>
             <a href="#projects" class="footer_link">Projects</a>
-          </li>         
+          </li-->
         </ul>
 
         <div class="footer_socials">
@@ -653,7 +648,7 @@
     </div>
   </footer>
 
- <!--=========================== SCROLL TOP ===========================-->
+  <!--=========================== SCROLL TOP ===========================-->
   <a href="#home" class="scrollup" id="scroll-up">
     <i class="uil uil-arrow-up scrollup_icon"></i>
   </a>
@@ -662,4 +657,5 @@
   <script src="js/main.js"></script>
 
 </body>
+
 </html>
