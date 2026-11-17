@@ -1,111 +1,129 @@
-/*=========================== MENU SHOW Y HIDDEN ===========================*/
+/*=========================== MENU SHOW & HIDDEN ===========================*/
 const navMenu = document.getElementById("nav-menu"),
-      navToggle = document.getElementById("nav-toggle"),
-      navClose = document.getElementById("nav-close"),
-      header = document.getElementById("header")
+  navToggle = document.getElementById("nav-toggle"),
+  navClose = document.getElementById("nav-close");
 
-/*==== MENU SHOW ====*/
-/*validate if const exists */
-if(navToggle){
+if (navToggle) {
   navToggle.addEventListener("click", () => {
-    navMenu.classList.add("show-menu")
-    header.classList.add("header-bg")
-  })
+    navMenu.classList.add("show-menu");
+  });
 }
 
-/*==== MENU HIDDEN ====*/
-/*validate if const exists */
-if(navClose){
+if (navClose) {
   navClose.addEventListener("click", () => {
-    navMenu.classList.remove("show-menu")
-    header.classList.remove("header-bg")
-  })
+    navMenu.classList.remove("show-menu");
+  });
 }
 
-/*=========================== REMOVE MENU MOBIL ===========================*/
-const navLink = document.querySelectorAll(".nav_link")
+/*=========================== REMOVE MENU MOBILE ===========================*/
+const navLinks = document.querySelectorAll(".nav_link");
 
-function linkAction(){
-  const navMenu = document.getElementById("nav-menu")
-  // When we click on each nav__link, we remove the show-menu class
-  navMenu.classList.remove("show-menu")
-}
-navLink.forEach(n => n.addEventListener('click', linkAction))
+navLinks.forEach(link => {
+  link.addEventListener("click", () => {
+    if (navMenu) navMenu.classList.remove("show-menu");
+  });
+});
 
 /*=========================== QUALIFICATION TABS ===========================*/
-const tabs = document.querySelectorAll('[data-target]'),
-      tabContents = document.querySelectorAll('[data-content]')
+const tabs = document.querySelectorAll("[data-target]"),
+  tabContents = document.querySelectorAll("[data-content]");
 
 tabs.forEach(tab => {
-  tab.addEventListener('click', () => {
-    const target = document.querySelector(tab.dataset.target)
+  tab.addEventListener("click", () => {
+    const target = document.querySelector(tab.dataset.target);
+    if (!target) return;
 
-    tabContents.forEach(tabContent => {
-      tabContent.classList.remove('qualification_active')
-    })
-    target.classList.add('qualification_active')
+    tabContents.forEach(tc => tc.classList.remove("qualification_active"));
+    target.classList.add("qualification_active");
 
-    tabs.forEach(tab => {
-      tab.classList.remove('qualification_active')
-    })
-    tab.classList.add('qualification_active')
-  })
-  
-
-
-})
+    tabs.forEach(t => t.classList.remove("qualification_active"));
+    tab.classList.add("qualification_active");
+  });
+});
 
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
-const sections = document.querySelectorAll('section[id]')
+const sections = document.querySelectorAll("section[id]");
 
-function scrollActive(){
-    const scrollY = window.pageYOffset
+function scrollActive() {
+  const scrollY = window.pageYOffset;
 
-    sections.forEach(current =>{
-        const sectionHeight = current.offsetHeight
-        const sectionTop = current.offsetTop - 50;
-        sectionId = current.getAttribute('id')
+  sections.forEach(current => {
+    const sectionHeight = current.offsetHeight;
+    const sectionTop = current.offsetTop - 70;
+    const sectionId = current.getAttribute("id");
+    const navItem = document.querySelector(`.nav_menu a[href*="${sectionId}"]`);
 
-        if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
-            document.querySelector('.nav_menu a[href*=' + sectionId + ']').classList.add('active-link')
-        }else{
-            document.querySelector('.nav_menu a[href*=' + sectionId + ']').classList.remove('active-link')
-        }
-    })
+    if (!navItem) return;
+
+    if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+      navItem.classList.add("active-link");
+    } else {
+      navItem.classList.remove("active-link");
+    }
+  });
 }
-window.addEventListener('scroll', scrollActive)
+window.addEventListener("scroll", scrollActive);
 
-/*==================== CHANGE BACKGROUND HEADER ====================*/ 
-function scrollHeader(){
-  const nav = document.getElementById('header')
-  // When the scroll is greater than 200 viewport height, add the scroll-header class to the header tag
-  if(this.scrollY >= 200) nav.classList.add('scroll-header'); else nav.classList.remove('scroll-header')
+/*==================== CHANGE BACKGROUND HEADER ====================*/
+function scrollHeader() {
+  const header = document.getElementById("header");
+  if (!header) return;
+  if (window.scrollY >= 80) {
+    header.classList.add("scroll-header");
+  } else {
+    header.classList.remove("scroll-header");
+  }
 }
-window.addEventListener('scroll', scrollHeader)
+window.addEventListener("scroll", scrollHeader);
 
-/*==================== SHOW SCROLL UP ====================*/ 
-function scrollUp(){
-  const scrollUp = document.getElementById('scroll-up');
-  // When the scroll is higher than 560 viewport height, add the show-scroll class to the a tag with the scroll-top class
-  if(this.scrollY >= 200) scrollUp.classList.add('show-scroll'); else scrollUp.classList.remove('show-scroll')
+/*==================== SHOW SCROLL UP ====================*/
+function scrollUp() {
+  const scrollUpBtn = document.getElementById("scroll-up");
+  if (!scrollUpBtn) return;
+  if (window.scrollY >= 300) {
+    scrollUpBtn.classList.add("show-scroll");
+  } else {
+    scrollUpBtn.classList.remove("show-scroll");
+  }
 }
-window.addEventListener('scroll', scrollUp)
+window.addEventListener("scroll", scrollUp);
 
-/*==================== DARK LIGHT THEME ====================*/ 
+/*==================== DARK / LIGHT THEME ====================*/
+const themeButton = document.getElementById("theme-button");
 
-
-const toggle = document.getElementById("theme-button")
-if(toggle){
-  toggle.addEventListener("click", () => {
-    document.body.classList.toggle("dark-theme")
-    if(document.body.classList.contains("dark-theme")){
-      toggle.classList.remove("uil-sun")
-      toggle.classList.add("uil-moon")
-    } else{
-      toggle.classList.remove("uil-moon")
-      toggle.classList.add("uil-sun")
-    }    
-  })
+if (themeButton) {
+  themeButton.addEventListener("click", () => {
+    document.body.classList.toggle("dark-theme");
+    if (document.body.classList.contains("dark-theme")) {
+      themeButton.classList.remove("uil-sun");
+      themeButton.classList.add("uil-moon");
+    } else {
+      themeButton.classList.remove("uil-moon");
+      themeButton.classList.add("uil-sun");
+    }
+  });
 }
 
+/*==================== BILINGUAL SWITCH (EN / DE) ====================*/
+const langButton = document.getElementById("lang-button");
+let currentLang = localStorage.getItem("portfolio-lang") || "en";
 
+function applyLanguage(lang) {
+  document.documentElement.lang = lang;
+  document.querySelectorAll("[data-en][data-de]").forEach(el => {
+    el.textContent = el.getAttribute(`data-${lang}`);
+  });
+  if (langButton) {
+    langButton.textContent = lang === "en" ? "DE" : "EN";
+  }
+}
+
+applyLanguage(currentLang);
+
+if (langButton) {
+  langButton.addEventListener("click", () => {
+    currentLang = currentLang === "en" ? "de" : "en";
+    localStorage.setItem("portfolio-lang", currentLang);
+    applyLanguage(currentLang);
+  });
+}
