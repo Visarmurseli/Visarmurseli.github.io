@@ -1,0 +1,13 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Murseli;Visar;;;
+FN:Visar Murseli
+TITLE:M.Sc. Information Systems
+ORG:SAP S/4HANA & IT Consulting
+URL;TYPE=WORK:https://visarmurseli.github.io
+URL;TYPE=LinkedIn:https://www.linkedin.com/in/visarmurseli/
+URL;TYPE=GitHub:https://github.com/Visarmurseli
+ADR;TYPE=HOME:;;Ludwigsburg / Stuttgart;Baden-Württemberg;;Germany
+EMAIL;TYPE=INTERNET:visar.murseli@gmx.de
+TEL;TYPE=CELL:+49 1578 8225884
+END:VCARD
