@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        #og-card {
+            width: 1200px;
+            height: 630px;
+            background: radial-gradient(circle at 80% 50%, rgba(190, 35, 43, 0.25), #0d0d0d 70%);
+            border-bottom: 8px solid hsl(358, 57%, 53%);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 90px;
+            color: #f5f5f5;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .text-box {
+            max-width: 650px;
+            z-index: 2;
+        }
+
+        .badge {
+            display: inline-block;
+            background: rgba(190, 35, 43, 0.2);
+            border: 1.5px solid hsl(358, 57%, 53%);
+            color: hsl(358, 92%, 85%);
+            padding: 6px 16px;
+            border-radius: 30px;
+            font-size: 18px;
+            font-weight: 500;
+            margin-bottom: 24px;
+        }
+
+        h1 {
+            font-size: 64px;
+            line-height: 1.1;
+            margin-bottom: 16px;
+            color: #fff;
+        }
+
+        h1 span {
+            color: hsl(358, 57%, 53%);
+        }
+
+        h2 {
+            font-size: 30px;
+            font-weight: 500;
+            color: #ccc;
+            margin-bottom: 12px;
+        }
+
+        p {
+            font-size: 22px;
+            color: #888;
+        }
+
+        .img-box {
+            width: 360px;
+            height: 460px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 2;
+        }
+
+        .img-box img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+            filter: drop-shadow(0 15px 30px rgba(0, 0, 0, 0.6));
+        }
+    </style>
+</head>
+
+<body>
+    <div id="og-card">
+        <div class="text-box">
+            <div class="badge">visarmurseli.github.io</div>
+            <h1>Visar <span>Murseli</span></h1>
+            <h2>M.Sc. Information Systems</h2>
+            <p>University of Stuttgart · SAP S/4HANA & Enterprise Architecture</p>
+        </div>
+        <div class="img-box">
+            <img src="img/portrait.png" alt="Visar Murseli">
+        </div>
+    </div>
+</body>
+
+</html>

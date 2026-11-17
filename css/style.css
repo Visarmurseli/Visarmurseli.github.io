@@ -1002,19 +1002,64 @@ header {
   }
 }
 
+/*=========================== RESPONSIVE & ULTRAWIDE SCALING (G9) ===========================*/
 @media screen and (min-width: 1024px) {
 
-  .header,
-  .main,
-  .footer_container {
-    padding: 0;
+  .container,
+  .nav {
+    max-width: 1180px;
+  }
+
+  .home_content {
+    grid-template-columns: max-content 1.2fr 1fr;
+    column-gap: 4rem;
   }
 
   .home_img {
-    width: 340px;
+    width: 400px;
   }
 
   .home_social {
-    transform: translateX(-3rem);
+    transform: translateX(-1.5rem);
+  }
+
+  .qualification_sections {
+    grid-template-columns: 0.7fr;
+  }
+
+  .sap_grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .contact_container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+}
+
+/* Extra-wide screens (21:9 & 32:9 Ultrawide like Samsung G9) */
+@media screen and (min-width: 1800px) {
+
+  .container,
+  .nav {
+    max-width: 1440px;
+  }
+
+  .home_content {
+    column-gap: 6rem;
+    padding-top: 6.5rem;
+  }
+
+  .home_img {
+    width: 460px;
+  }
+
+  .qualification_sections {
+    grid-template-columns: 0.65fr;
+  }
+
+  .sap_card,
+  .contact_card {
+    padding: 2.5rem 2rem;
   }
 }
